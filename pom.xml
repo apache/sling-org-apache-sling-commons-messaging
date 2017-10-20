@@ -42,9 +42,9 @@
   </properties>
 
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/sling/trunk/bundles/commons/org.apache.sling.commons.messaging</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/sling/trunk/bundles/commons/org.apache.sling.commons.messaging</developerConnection>
-    <url>http://svn.apache.org/viewvc/sling/trunk/bundles/commons/org.apache.sling.commons.messaging</url>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-commons-messaging.git</conncetion>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-commons-messaging.git</developerConnection>
+    <url>https://gitbox.apache.org/repos/asf?p=sling-org-apache-sling-commons-messaging.git</url>
   </scm>
 
   <build>
