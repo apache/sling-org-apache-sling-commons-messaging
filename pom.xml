@@ -30,7 +30,6 @@
 
   <artifactId>org.apache.sling.commons.messaging</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>bundle</packaging>
 
   <name>Apache Sling Commons Messaging</name>
   <description>Apache Sling Commons Messaging</description>
@@ -50,10 +49,16 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <extensions>true</extensions>
+        <groupId>biz.aQute.bnd</groupId>
+        <artifactId>bnd-maven-plugin</artifactId>
       </plugin>
+      <!-- enable baseline after initial release -->
+      <!--
+      <plugin>
+        <groupId>biz.aQute.bnd</groupId>
+        <artifactId>bnd-baseline-maven-plugin</artifactId>
+      </plugin>
+      -->
     </plugins>
   </build>
 
