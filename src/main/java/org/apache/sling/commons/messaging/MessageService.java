@@ -21,8 +21,7 @@ package org.apache.sling.commons.messaging;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
-import javax.annotation.Nonnull;
-
+import org.jetbrains.annotations.NotNull;
 import org.osgi.annotation.versioning.ProviderType;
 
 @ProviderType
@@ -33,7 +32,7 @@ public interface MessageService {
      * @param recipient the recipient of the message
      * @return result of sending the message
      */
-    CompletableFuture<Result> send(@Nonnull final String message, @Nonnull final String recipient);
+    CompletableFuture<Result> send(@NotNull final String message, @NotNull final String recipient);
 
     /**
      * @param message   the message to send
@@ -41,6 +40,6 @@ public interface MessageService {
      * @param data      additional information (e.g. attachments) and/or parameters (e.g. sender) for the message
      * @return result of sending the message
      */
-    CompletableFuture<Result> send(@Nonnull final String message, @Nonnull final String recipient, @Nonnull final Map data);
+    CompletableFuture<Result> send(@NotNull final String message, @NotNull final String recipient, @NotNull final Map data);
 
 }

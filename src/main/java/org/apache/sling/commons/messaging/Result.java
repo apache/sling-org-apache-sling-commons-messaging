@@ -18,8 +18,7 @@
  */
 package org.apache.sling.commons.messaging;
 
-import javax.annotation.CheckForNull;
-
+import org.jetbrains.annotations.Nullable;
 import org.osgi.annotation.versioning.ProviderType;
 
 @ProviderType
@@ -28,6 +27,6 @@ public interface Result<T> {
     /**
      * @return serialized form of the sent message
      */
-    @CheckForNull T getMessage();
+    @Nullable T getMessage();
 
 }
