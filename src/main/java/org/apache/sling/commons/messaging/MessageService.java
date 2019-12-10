@@ -18,28 +18,18 @@
  */
 package org.apache.sling.commons.messaging;
 
-import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 import org.jetbrains.annotations.NotNull;
 import org.osgi.annotation.versioning.ProviderType;
 
 @ProviderType
-public interface MessageService {
+public interface MessageService<T> {
 
     /**
-     * @param message   the message to send
-     * @param recipient the recipient of the message
-     * @return result of sending the message
+     * @param message the message to send
+     * @return the sent message
      */
-    CompletableFuture<Result> send(@NotNull final String message, @NotNull final String recipient);
-
-    /**
-     * @param message   the message to send
-     * @param recipient the recipient of the message
-     * @param data      additional information (e.g. attachments) and/or parameters (e.g. sender) for the message
-     * @return result of sending the message
-     */
-    CompletableFuture<Result> send(@NotNull final String message, @NotNull final String recipient, @NotNull final Map data);
+    CompletableFuture<T> sendMessage(@NotNull final T message);
 
 }
