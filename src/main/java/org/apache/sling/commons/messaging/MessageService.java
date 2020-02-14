@@ -24,12 +24,12 @@ import org.jetbrains.annotations.NotNull;
 import org.osgi.annotation.versioning.ProviderType;
 
 @ProviderType
-public interface MessageService<T> {
+public interface MessageService<T, S> {
 
     /**
      * @param message the message to send
-     * @return the sent message
+     * @return the result of send operation
      */
-    CompletableFuture<T> sendMessage(@NotNull final T message);
+    @NotNull CompletableFuture<S> sendMessage(@NotNull final T message);
 
 }
