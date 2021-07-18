@@ -33,6 +33,8 @@ import org.osgi.annotation.versioning.ProviderType;
 public interface MessageService<T, S> {
 
     /**
+     * Sends the given message.
+     *
      * @param message the message to send
      * @return the result of send operation
      */
