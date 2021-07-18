@@ -38,6 +38,6 @@ public interface MessageService<T, S> {
      * @param message the message to send
      * @return the result of send operation
      */
-    @NotNull CompletableFuture<S> sendMessage(@NotNull final T message);
+    public abstract @NotNull CompletableFuture<S> sendMessage(@NotNull final T message);
 
 }
