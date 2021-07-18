@@ -23,6 +23,12 @@ import java.util.concurrent.CompletableFuture;
 import org.jetbrains.annotations.NotNull;
 import org.osgi.annotation.versioning.ProviderType;
 
+/**
+ * Service for sending messages.
+ *
+ * @param <S> the type of result returned by send operation
+ * @param <T> the type of message to send
+ */
 @ProviderType
 public interface MessageService<T, S> {
 
