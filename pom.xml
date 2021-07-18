@@ -24,7 +24,7 @@
   <parent>
     <groupId>org.apache.sling</groupId>
     <artifactId>sling-bundle-parent</artifactId>
-    <version>38</version>
+    <version>43</version>
     <relativePath />
   </parent>
 
@@ -35,8 +35,6 @@
   <description>Apache Sling Commons Messaging</description>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <sling.java.version>8</sling.java.version>
   </properties>
 
@@ -49,13 +47,6 @@
 
   <build>
     <plugins>
-      <plugin>
-        <groupId>biz.aQute.bnd</groupId>
-        <artifactId>bnd-baseline-maven-plugin</artifactId>
-        <configuration>
-          <failOnMissing>false</failOnMissing>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
 
@@ -66,7 +57,7 @@
       <artifactId>org.osgi.annotation.versioning</artifactId>
       <scope>provided</scope>
     </dependency>
-    <!-- JSR 305-->
+    <!-- nullability -->
     <dependency>
       <groupId>org.jetbrains</groupId>
       <artifactId>annotations</artifactId>
